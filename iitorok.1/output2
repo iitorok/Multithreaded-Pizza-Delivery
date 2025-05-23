@@ -1,0 +1,12 @@
+driver 0 ready at (0,0)
+customer 0 requests pizza at (7,3)
+customer 0 matched with driver 0
+driver 0 driving from (0,0) to (7,3)
+customer 0 pays driver 0
+customer 0 requests pizza at (1,0)
+driver 0 ready at (7,3)
+customer 0 matched with driver 0
+driver 0 driving from (7,3) to (1,0)
+customer 0 pays driver 0
+driver 0 ready at (1,0)
+No runnable threads.  Exiting.
