@@ -11,16 +11,15 @@ endif
 CC+=-g -Wall -std=c++20
 
 # List of source files for your program
-SOURCES=testp2.cpp
+SOURCES=pizza.cpp
 
 # Generate the names of the program's object files
 OBJS=${SOURCES:.cpp=.o}
 
-all: testp2
+all: pizza
 
 # Compile the program and tag this compilation
-testp2: ${OBJS} ${LIBTHREAD}
-	./autotag.sh push
+pizza: ${OBJS} ${LIBTHREAD}
 	${CC} -o $@ $^ -ldl -pthread
 
 # Generic rules for compiling a source file to an object file
@@ -30,4 +29,4 @@ testp2: ${OBJS} ${LIBTHREAD}
 	${CC} -c $<
 
 clean:
-	rm -f ${OBJS} testp2
+	rm -f ${OBJS} pizza
